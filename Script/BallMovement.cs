@@ -24,14 +24,16 @@ public class BallMovement : MonoBehaviour
         if (col.gameObject.tag == "Goal1")
         {
             Debug.Log("Player 2 scored");
+            //rb.velocity = Vector2.zero;
             GlobalVariables.player2Score++;
-            //SceneManager.LoadScene("GameSceneForStudy");
+            SceneManager.LoadScene("GameScene_YourName");
         }
         if (col.gameObject.tag == "Goal2")
         {
             Debug.Log("Player 1 scored");
+            //rb.velocity = Vector2.zero;
             GlobalVariables.player1Score++;
-            //SceneManager.LoadScene("GameSceneForStudy");
+            SceneManager.LoadScene("GameScene_YourName");
         }
     }
 

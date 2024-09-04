@@ -5,7 +5,7 @@ using TMPro;
 
 public class WriteP1Score : MonoBehaviour
 {
-    private void Update()
+    private void Start()
     {
         GetComponent<TextMeshProUGUI>().text = GlobalVariables.player1Score.ToString();
     }

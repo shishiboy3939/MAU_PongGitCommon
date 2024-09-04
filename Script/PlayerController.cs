@@ -3,13 +3,14 @@ using UnityEngine;
 public static class PlayerController
 {
     private static int speed = 30;
-    private static float wallPosition = 20.0f;
+    private static float wallPosition = 13.0f;
 
     private static Vector2 direction;
     private static Vector2 velocity;
 
     // Called by Player1's Update() method
     // Gets direction of Player1 paddle based on user input
+    
     public static Vector2 Player1Input(Vector3 pos)
     {
         if (Input.GetKey(KeyCode.W) && pos.y < wallPosition)
